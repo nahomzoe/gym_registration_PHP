@@ -1,11 +1,11 @@
 <?php
-echo "Welcome to PHP World ";
-echo "</br>";  
+  
 
 
 // The MySQL service named in the docker-compose.yml.
-$host = 'db';
-
+$host = 'db01';
+//Database
+$db = 'lionDB';
 // Database user name
 $user = 'lionUser';
 
@@ -13,11 +13,9 @@ $user = 'lionUser';
 $pass = 'lionPass';
 
 // check the MySQL connection status
-$conn = new mysqli($host, $user, $pass);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else {
-    echo "Connected to MySQL server successfully!";
+$conn = new mysqli($host, $user, $pass,$db);
+if (!$conn) {
+    die(mysqli_error($conn));
 }
 
 ?>
