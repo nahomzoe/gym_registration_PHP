@@ -6,7 +6,10 @@ if(isset($_POST['submit'])){
     $email=$_POST['email'];
     $phone=$_POST['phone'];
     $password=$_POST['password'];
-
+    if ($firstname == "") {
+      echo 'first name is required';
+    }
+    
     $sql="insert into `members`(firstname,lastname,email,phonenumber,password) values('$firstname','$lastname','$email','$phone','$password')";
     $result=mysqli_query($conn,$sql);
     if($result){

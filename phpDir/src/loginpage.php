@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +14,25 @@
 </head>
 <body>
     <div class="container my-5">
+    <form method="post">
     <div class="row g-2">
+     
   <div class="col-md">
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="" name="user">
       <label for="floatingInputGrid">Admin log</label>
     </div>
   </div>
   <div class="col-md">
     <div class="form-floating">
-    <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+    <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="" name="adminpass">
       <label for="floatingInputGrid">Password</label>
     </div>
   </div>
   <button type="button" class="btn btn-outline-secondary">Login</button>
+ 
 </div>
+</form>
     </div>
 </body>
 </html>
