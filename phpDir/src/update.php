@@ -1,5 +1,7 @@
 <?php
-include 'index.php';
+session_start();
+include("index.php");
+include("functions.php");
 $id=$_GET['updateid'];
 $sql="select * from `members` where id=$id";
 $result=mysqli_query($conn,$sql);
@@ -29,19 +31,11 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <title>My PHP project</title>
-  </head>
-  <body>
-  <div class="container my-5">
+<?php
+include './header/header.php';
+?>
+  <div class="container my-5 card p-3">
+  <h2>Update member</h2>
   <form method="post">
 
   <div class="form-group my-3">

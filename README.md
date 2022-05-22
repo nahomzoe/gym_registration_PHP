@@ -11,3 +11,15 @@ This project is a set of docker images that include a MAMP stack ([macOS](https:
 ```
 docker-compose up
 ```
+
+# Discription
+
+This app allows the gym admin to login and signup , to register new members.
+
+# login page
+
+http://localhost:8081/loginpage.php
+
+# Singup page
+
+http://localhost:8081/signuppage.php

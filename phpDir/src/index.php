@@ -1,5 +1,4 @@
 <?php
-  
 
 
 // The MySQL service named in the docker-compose.yml.

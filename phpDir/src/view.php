@@ -1,20 +1,15 @@
 <?php
-include 'index.php';
+session_start();
+include("index.php");
+include("functions.php");
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="style.css">
-    <title>My PHP project</title>
-</head>
-<body>
-    <div class="container">
-        <button  type="button" class="btn btn-outline-secondary my-5"> <a href="form.php" class="text-dark">Add member</a> </button>
+<?php
+include './header/headerview.php';
+?>
+    <div class="container card p-3">
+    <h2>All members</h2>
+        <button  type="button" class="btn btn-outline-secondary my-5 p-2"> <a href="form.php" class="text-dark">Add member</a> </button>
 
     <table class="table table-success table-striped">
         <thead>
