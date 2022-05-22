@@ -7,8 +7,12 @@ session_start();
 	$user_data = check_login($conn);
 
 
+?>
+
+<?php
 include './header/headerhome.php';
 ?>
+
       <h1>One Fitness Club & Gym</h1>
       <h4>Welcome,<?php echo $user_data['username']; ?></h4>
       <h2>Membership Type</h2>

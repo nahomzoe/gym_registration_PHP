@@ -20,7 +20,7 @@
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
     </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="css/stylehome.css">
     <title>My PHP project</title>
   </head>
   <body>

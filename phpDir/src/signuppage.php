@@ -1,5 +1,5 @@
- <?php
- //session_start();
+<?php
+
 	include("index.php");
 	include("functions.php");
 
@@ -10,24 +10,18 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		if(!empty($username) && !empty($password) && !is_numeric($username))
-		{
-
-			//save to database
-			$userid = random_num(20);
-			$query = "insert into users (user_id,username,password) values ('$userid','$username','$password')";
+		if(!empty($username) && !empty($password) && !is_numeric($username)) {
+			$query = "insert into users (username,password) values ('$username','$password')";
 
 			mysqli_query($conn, $query);
 
-			//header("Location: loginpage.php");
-			//die;
-		}else
-		{
+			header('location:loginpage.php');
+			die;
+		} else {
 			echo "Please enter some valid information!";
 		}
 	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
